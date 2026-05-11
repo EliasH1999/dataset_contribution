@@ -1,4 +1,4 @@
-# Dataset for "Automated Configuration Generation Based on Device Manuals"
+# Dataset for "Assisted Configuration Generation Based on Device Manuals"
 
 This package contains the evaluation dataset used in our thesis.
 
