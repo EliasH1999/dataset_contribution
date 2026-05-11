@@ -19,6 +19,17 @@ This package contains the evaluation dataset used in our thesis.
 - Keys follow our Anybus JSON configuration schema.
 - Missing values are recorded as 'not found'.
 
+## What the key=value files represent
+Each file in 'golden_keyValues/' is a **golden configuration** for one manual. The lines are expected values for a fixed set of configuration fields (our target schema). In other words, the key=values files are the ground truth used to evaluate the system
+
+## Equivalent answers
+For some fields, more than one output can be logically correct. For example:
+- different address representation (e.g, Modicon vs 0-based address) if they refer to the same register
+- different but equivalent formatting (e.g, hex vs decimal) depending on the manual.
+
+## OR values
+We use '|' to represent multiple valid values. The first value is the preferred/default reference, the others are acceptable alternatives. A prediction is correct if it matches any option.
+
 ## Notes on licensing
 - Manuals are not redistributed in this package
 - We only provide source URLs and access dates.
